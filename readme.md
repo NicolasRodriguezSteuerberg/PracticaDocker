@@ -8,7 +8,7 @@
     |------|------|------|------|------|
     |ubuntu|latest|c6b84b685f35|4 weeks ago|7.8MB|
 
-<br></br>
+<br>
 
 2. **Crea un contenedor sin ponerle nombre. ¿está arrancado? Obtén el nombre**
     1. `docker run ubuntu`
@@ -17,10 +17,12 @@
     |CONTAINER ID|IMAGE|COMMAND|CREATED|STATUS|PORTS|NAMES|
     |------|------|------|------|------|------|------|
     |3bf6b126e984|ubuntu|"/bin/bash" |8 minutes ago|Exited (0) 8 minutes ago||vibrant_robinson|
-
+<br>
 
 3. **Crea un contenedor con el nombre 'dam_ubu1'. ¿Como puedes acceder a él?**
+    1. `docker run -it --name dam_ubu1 ubuntu` *Gracias a esto crearemos el contenedor con el nombre **_dam_ubu1_**, para acceder al contenedor nada más crearlo podremos hacerlo agregando la variable -it, esto nos permite interactuar con el*
 
+<br>
 
 4. **Comprueba que ip tiene y si puedes hacer un ping a google.com**
 
@@ -32,3 +34,9 @@
 7. **¿Cuanta memoria en el disco duro ocupaste?**
 
 8. **¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?**
+
+
+
+<details><summary>Aqui os dejo un enlace a un repositorio donde tengo más apuntes sobre docker</summary>
+![Mis apuntes](https://github.com/NicolasRodriguezSteuerberg/CosasPc/tree/main/2/Apuntes/SXE)
+</details>
