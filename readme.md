@@ -6,7 +6,13 @@
 <br></br>
 
 2. **Crea un contenedor sin ponerle nombre. ¿está arrancado? Obtén el nombre**
-`
+    1. `docker run ubuntu`
+    2. `docker ps -a` *Con este comando miramos todos los contenedores que tenemos, con el comando anterior lo abremos creado pero estará en modo cerrado. El primero que te saldrá sea posiblemente el último contenedor que hayas creado. En mi caso mi contenedor se creó con el nombre: **_vibrant_robinson_**. Vas al apartado names y miras su nombre. Te saldrá algo parecido a esto:*
+
+    |CONTAINER ID|IMAGE|COMMAND|CREATED|STATUS|PORTS|NAMES|
+    |------|------|------|------|------|------|------|
+    |3bf6b126e984|ubuntu|"/bin/bash" |8 minutes ago|Exited (0) 8 minutes ago||vibrant_robinson|
+
 
 3. **Crea un contenedor con el nombre 'dam_ubu1'. ¿Como puedes acceder a él?**
 
