@@ -38,5 +38,6 @@
 
 
 <details><summary>Aqui os dejo un enlace a un repositorio donde tengo más apuntes sobre docker</summary>
-![Mis apuntes](https://github.com/NicolasRodriguezSteuerberg/CosasPc/tree/main/2/Apuntes/SXE)
+
+[Mis apuntes](https://github.com/NicolasRodriguezSteuerberg/CosasPc/tree/main/2/Apuntes/SXE)
 </details>
