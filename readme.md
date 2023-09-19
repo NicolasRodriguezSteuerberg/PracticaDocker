@@ -19,7 +19,7 @@
     |3bf6b126e984|ubuntu|"/bin/bash" |8 minutes ago|Exited (0) 8 minutes ago||vibrant_robinson|
 <br>
 
-3. **Crea un contenedor con el nombre 'dam_ubu1'. ¿Como puedes acceder a él?**
+3. <a name="enlace1"></a>**Crea un contenedor con el nombre 'dam_ubu1'. ¿Como puedes acceder a él?**
     1. `docker run -it --name dam_ubu1 ubuntu` *Gracias a esto crearemos el contenedor con el nombre **_dam_ubu1_**, para acceder al contenedor nada más crearlo podremos hacerlo agregando la variable -it, esto nos permite interactuar con el*
 
 <br>
@@ -29,13 +29,17 @@
         1. ` apt update` *Actualiza la lista de paquetes*
         2. `apt install net-tools` *Descargamos el paquete de net-tools*
         3. Finalmente para ver la ip utilizamos el comando: `ifconfig`
-    2. Para poder ver si podemos hacer ping a google.com por ejemplo primero tendremos que instalar su debido paquete:
+    2. <a name="enlace2"></a>Para poder ver si podemos hacer ping a google.com por ejemplo primero tendremos que instalar su debido paquete:
         1. `apt install iputils-ping` *Descarga el paquete que nos permite hacer ping*
         2. Para hacer ping usaremos el comando `ping google.com`, de esta manera hacemos ping con google, para parar el ping le daremos al Ctrl + C
 
 <br>
 
 5. **Crea un contenedor con el nombre 'dam_ubu2'. ¿Puedes hacer ping entre los contenedores?**
+    1. Para crear el contenedor haremos como en uno de los apartados anteriores pero con el nombre **_dam_ubu2_**: [aquí](#enlace1)
+    2. Para hacer ping instalaremos en este ultimo el ping como en el apartado anterior: [aqui](#enlace2)
+        1. Ahora que lo tenemos hacemos el comando `ping 172.17.0.2`, el 172.17.0.2 es la ip que tengas en el otro contenedor.
+    
 
 6. **Sal del terminal, ¿que ocurrió con el contenedor?**
 
