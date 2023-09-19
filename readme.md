@@ -2,7 +2,12 @@
 
 1. **Descarga la imagen ubuntu y comprueba que está en tu equipo.**
     1. `docker run ubuntu` *De esta manera si no encuentra la imagen localmente procederá a descargar la imagen*
-    2. `docker image ls -a` *Este comando nos permite ver las imágenes que tenemos descargadas*
+    2. `docker image ls -a` *Este comando nos permite ver las imágenes que tenemos descargadas. Te debería salir algo parecido a esto:*
+   
+    |REPOSITORY|TAG|IMAGE ID|CREATED|SIZE|
+    |------|------|------|------|------|
+    |ubuntu|latest|c6b84b685f35|4 weeks ago|7.8MB|
+
 <br></br>
 
 2. **Crea un contenedor sin ponerle nombre. ¿está arrancado? Obtén el nombre**
