@@ -42,8 +42,13 @@
     
 
 6. **Sal del terminal, ¿que ocurrió con el contenedor?**
+    1. Por si no sabes salir de la terminal del contenedor se consigue con este comando: `exit`
+    2. Al salir de esa terminal el contenedor se cierra *(no se elimina)*
+
+<br>
 
 7. **¿Cuanta memoria en el disco duro ocupaste?**
+
 
 8. **¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?**
 
