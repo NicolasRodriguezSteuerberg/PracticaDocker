@@ -25,7 +25,15 @@
 <br>
 
 4. **Comprueba que ip tiene y si puedes hacer un ping a google.com**
+    1. Para comprobar la ip necesitaremos descargar el net-tools en el contenedor:
+        1. ` apt update` *Actualiza la lista de paquetes*
+        2. `apt install net-tools` *Descargamos el paquete de net-tools*
+        3. Finalmente para ver la ip utilizamos el comando: `ifconfig`
+    2. Para poder ver si podemos hacer ping a google.com por ejemplo primero tendremos que instalar su debido paquete:
+        1. `apt install iputils-ping` *Descarga el paquete que nos permite hacer ping*
+        2. Para hacer ping usaremos el comando `ping google.com`, de esta manera hacemos ping con google, para parar el ping le daremos al Ctrl + C
 
+<br>
 
 5. **Crea un contenedor con el nombre 'dam_ubu2'. ¿Puedes hacer ping entre los contenedores?**
 
