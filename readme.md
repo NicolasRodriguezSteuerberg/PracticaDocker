@@ -64,6 +64,11 @@
 
 8. **¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?**
 
+    Los contenedores que no están arrancados no ocupan un espacio de memoria. En cambio, mi contenedor dam_ubu2 que está arrancado ocupa un espacio de memoria de 5.051 MiB con un límite de 15.39 GiB. Como vemos esto, pues con: `docker stats` o `docker stats -a`. Con el primer comando solo veremos los contenedeores que están activos, en cambio el segundo nos muestra también los que no están arrancados. Al lanzar el primer comando se ve algo parecido a esto:
+
+    |CONTAINER ID|NAME|CPU %|MEM USAGE / LIMIT|MEM %|NET I/O|BLOCK I/O|PIDS|
+    |------|------|------|------|------|------|------|------|
+    |3dfdd64d085b|DAM_UBU2|0.00%|5.051MiB / 15.39GiB|0.03%|12.1kB / 0B|5MB / 0B|2|
 
 
 <details><summary>Aqui os dejo un enlace a un repositorio donde tengo más apuntes sobre docker</summary>
