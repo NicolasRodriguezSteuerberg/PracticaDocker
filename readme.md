@@ -53,6 +53,14 @@
 
 7. **¿Cuanta memoria en el disco duro ocupaste?**
 
+    >Para ver la memoria que ocupa docker cuenta con un comando que nos facilita ver esto. Este comando nos permite ver las imagenes, los contenedores (esto de forma general). Para que esto sea más específico usamos la variable "_-v_", quedando el comando de esta forma `docker system df -v`.<br>
+    En mi caso el contenedor dam_ubu1 pesa 46.1MB, mientras que dam_ubu2 pesa 45.6<br>
+    El resultado del comando se verá algo como esto:
+    
+    |CONTAINER ID|IMAGE|COMMAND|LOCAL VOLUMES|SIZE|CREATED|STATUS|NAMES|
+    |------|------|------|------|------|------|------|------|
+    |3dfdd64d085b|ubuntu|"/bin/bash" |0|45.6|21 hours ago|Up 7 minutes |dam_ubu2|
+    |8c70124f0e48|ubuntu|"/bin/bash" |0|46.1|22 hours ago|Exited (137) 21 hours ago|dam_ubu1|
 
 8. **¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?**
 
