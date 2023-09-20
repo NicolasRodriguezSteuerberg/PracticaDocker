@@ -42,8 +42,12 @@
     
 
 6. **Sal del terminal, ¿que ocurrió con el contenedor?**
-    1. Por si no sabes salir de la terminal del contenedor se consigue con este comando: `exit`
-    2. Al salir de esa terminal el contenedor se cierra *(no se elimina)*
+    
+    Al cerrar la terminal el contenedor no se cierra, sigue activo. ¿Como sabemos esto? Pues abriendo una nueva terminal y poniendo el comando `docker ps`, con este comando vemos los contenedores que estan activos. Se veria algo parecido a esto:
+
+    |CONTAINER ID|IMAGE|COMMAND|CREATED|STATUS|PORTS|NAMES|
+    |------|------|------|------|------|------|------|
+    |3dfdd64d085b|ubuntu|"/bin/bash" |21 hours ago|Up 2 minutes||dam_ubu2|
 
 <br>
 
